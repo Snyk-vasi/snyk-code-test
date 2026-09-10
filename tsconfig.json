@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "target": "ESNext",
+    "rootDir": "./",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "stableTypeOrdering": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@domain/*": ["./src/domain/*"],
+      "@resources/*": ["./src/proxy/resources/*"],
+      "@services/*": ["./src/services/*"],
+      "@providers/*": ["./src/providers/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
